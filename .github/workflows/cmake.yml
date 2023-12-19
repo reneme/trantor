@@ -133,18 +133,18 @@ jobs:
       run: |
         cd build
         ulimit -c unlimited
-        env CTEST_OUTPUT_ON_FAILURE=1 sudo make test
-        env CTEST_OUTPUT_ON_FAILURE=1 sudo make test
-        env CTEST_OUTPUT_ON_FAILURE=1 sudo make test
-        env CTEST_OUTPUT_ON_FAILURE=1 sudo make test
-        env CTEST_OUTPUT_ON_FAILURE=1 sudo make test
-        env CTEST_OUTPUT_ON_FAILURE=1 sudo make test
-        env CTEST_OUTPUT_ON_FAILURE=1 sudo make test
-        env CTEST_OUTPUT_ON_FAILURE=1 sudo make test
-        env CTEST_OUTPUT_ON_FAILURE=1 sudo make test
-        env CTEST_OUTPUT_ON_FAILURE=1 sudo make test
-        env CTEST_OUTPUT_ON_FAILURE=1 sudo make test
-        env CTEST_OUTPUT_ON_FAILURE=1 sudo make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
 
     - uses: actions/upload-artifact@master # capture all crashes as build artifacts
       if: always()
