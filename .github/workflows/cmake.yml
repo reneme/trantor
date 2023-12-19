@@ -133,6 +133,17 @@ jobs:
       run: |
         cd build
         env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
+        env CTEST_OUTPUT_ON_FAILURE=1 make test
 
     - name: Lint
       if: matrix.os == 'ubuntu-20.04'
