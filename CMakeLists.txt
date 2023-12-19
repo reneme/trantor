@@ -267,7 +267,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES CXX_EXTENSIONS OFF)
 set_target_properties(${PROJECT_NAME} PROPERTIES EXPORT_NAME Trantor)
 
 if(BUILD_TESTING)
-  # add_subdirectory(trantor/tests)
+  add_subdirectory(trantor/tests)
   find_package(GTest)
   if(GTest_FOUND)
     enable_testing()
