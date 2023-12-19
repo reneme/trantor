@@ -20,7 +20,7 @@ inline bool attemptHash(const std::string_view& name,
         return false;
 
     hashFunction->update((const unsigned char*)data, len);
-    hashFunction->final((unsigned char*)&hash);
+    hashFunction->final((unsigned char*)&hash.bytes);
     return true;
 }
 
